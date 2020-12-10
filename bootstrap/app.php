@@ -56,9 +56,9 @@ $app->singleton(
 |
 */
 
-// $app->middleware([
-//     App\Http\Middleware\ExampleMiddleware::class
-// ]);
+$app->middleware([
+    App\Http\Middleware\AuthenticateAccess::class
+]);
 
 // $app->routeMiddleware([
 //     'auth' => App\Http\Middleware\Authenticate::class,
@@ -97,3 +97,6 @@ $app->router->group([
 });
 
 return $app;
+
+
+//eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImNmNjk3NmI1MjI1OTU2OWZiNmJmZDUxZjlhM2M2ODJlMmRiYmY4ZjFhYjc3ZTIwYzk3Mjc4ZWJiNmU3YmViOWYzMzY3YWZkZmZkNDdkMGI2In0.eyJhdWQiOiI0IiwianRpIjoiY2Y2OTc2YjUyMjU5NTY5ZmI2YmZkNTFmOWEzYzY4MmUyZGJiZjhmMWFiNzdlMjBjOTcyNzhlYmI2ZTdiZWI5ZjMzNjdhZmRmZmQ0N2QwYjYiLCJpYXQiOjE2MDc1OTU3MzUsIm5iZiI6MTYwNzU5NTczNSwiZXhwIjoxNjM5MTMxNzM0LCJzdWIiOiIiLCJzY29wZXMiOltdfQ.hbKvTQ2GAjgtAVJMghYI_aSp4PSqzKLIYU3tKEXJBWAAoECt4GbZ0qzKWywFvtJzsEAGX0kxzNjDvDUQWJxCkA3ykE52jnOA1ziwVV0jR94ojp_xiYtlCEMEr7cDjjn5VW0NJ9aGqO199v0zlwpbHj3OD0TY0dFqxSfsu_B8qqgZnkmUurM_BaH5BfuSW_-FH-gjTy9gJXgJB5e134vxEXU23Gu4hY-HjZVVx0Mu6v_sQGbkcfSn_mne9PIwb_XPIs_25IDDuGvKHd39KeikgXEeN_NN49Iywg4mvaJ_oJViOPIQpvVFRNDEM0SM8zaBpJtWRCqAk5e9PGAjs1AeRGb8bAJAdTM8z9ntdJEm7IFKrmI9po5ikncvBUxDsVyUwkZi5X_LNyx1pTYeC363g9_DjpEe5wunRibCwS31XsaFNmb6s1NyjjDgYvr-ENBbJCJuoGqcUqWFHJY8PER7rAE_NEXYyk5rmija7yAiaiXvoxUiTuPNdI9LKus43YeSMSSmsvzKXqOf6rMnYgpq0FOD9Wi-KUEmMlVyBLRz42MQ8ayFZU1qvOwboT2hVzjra9KAmkRFde0Q6WvdqGwIER5DDD_7SKFH_wn11Yd0LlHMieTByedmOoWxayZ7SKuh4U0Ak1_uTE4nN62ylUsqluBHE0rsbDX7P-acoywkLio
